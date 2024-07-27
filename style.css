@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  /* choose a nicer font later */
+  font-family: 'Georgia', serif;
+  background: cornsilk;
+  color: chocolate;
+}
+
+img {
+  width: 200px;
+}
