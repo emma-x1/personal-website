@@ -9,3 +9,15 @@ body {
 img {
   width: 200px;
 }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px
+  border: 2px solid #e1bebd
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  resize: vertical
+  
+}
