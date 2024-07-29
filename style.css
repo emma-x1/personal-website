@@ -21,3 +21,7 @@ input[type=text], select, textarea {
   resize: vertical
   
 }
+
+.fcf-body {
+    font-family: 'Georgia', serif;
+}
