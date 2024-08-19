@@ -1,27 +1,77 @@
+*{
+  padding: 0;
+  margin: 50;
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
-  /* choose a nicer font later */
   font-family: 'Georgia', serif;
-  background: cornsilk;
+  background: linear-gradient(cornsilk, #ffc299ff);
   color: chocolate;
 }
 
+/*contact form formatting*/
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.contact-inputs {
+  height: 20px;
+  width: 95vw;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  width: 95vw;
+  padding-top: 3px;
+  border-radius: 10px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid #d2691eff;
+}
+
+.contact-inputs::placeholder {
+  color: #chocolate;
+  font-family: 'Georgia';
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-family: 'Georgia';
+  font-size: 10px;
+  color: #8b849bff;
+  background-color: cornsilk;
+  border: 3px solid;
+  gap: 10px;
+}
+
+/*other formatting*/
+
 img {
   width: 200px;
+  margin: 10px;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px
-  border: 2px solid #e1bebd
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  resize: vertical
-  
-}
 
-.fcf-body {
-    font-family: 'Georgia', serif;
+hr {
+  border-top: 1px solid #chocolate;
 }

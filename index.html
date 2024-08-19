@@ -21,7 +21,7 @@
     <h2>a bit about me...</h2>
     <p> currently listening to: taylor swift's new romantics</p>
     <p> currently watching: gilmore girls</p> 
-    <p> interests: effective altruism</p>
+    <p> interests: effective altruism, bioinformatics</p>
     <p> major: cs @ university of waterloo </p>    
     <img src="https://cloud-l05zqz9hb-hack-club-bot.vercel.app/0img_4168__1_.png" />
   </div>
@@ -36,6 +36,8 @@
     <h2>projects</h2>
     <p><strong>under construction, please check again later</strong> (see soon: girls who code projects, data analysis, and non-trivial fellowship!</p>
 
+    <hr>
+    
     <h2> socials</h2>
         <a href="https://www.linkedin.com/in/emma-xing-3a983a264/">linkedin</a>
         <a href="https://www.instagram.com/emma_x_/?next=%2F">instagram</a>
@@ -49,31 +51,20 @@
     <p style="display:inline">email: </p> <p style="display:inline"><a href="mailto:emmaxing.yueran@gmail.com">emmaxing.yueran@gmail.com</a></h4>
     <p>phone: 416-918-3068</p>
 
-
-  <h2>... or through here!</h2>
-      <div class="content">
-        <p>what's on your mind?</p>
-        <form>
-          <div class="field">
-            <div class="field half">
-              <input type="text" name="name" id="name" placeholder="full name" />
-            </div>
-          </div>
-            <div class="field half">
-              <input type="email" name="email" id="email" placeholder="email address" />
-            </div>
-          <div>
-            <div class="field">
-              <textarea name="message" id="message" placeholder="message" rows="3"></textarea>
-            </div>
-          </div>
-          <ul class="actions">
-            <li><input type="submit" value="send!" class="button primary" /></li>
-          </ul>
-        </form>
-      </div>
-
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-
+<!--contact form-->
     
+  <h2>... or through here!</h2>
+      <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+          <input type="hidden" name="access_key" value="36aefd7d-85e1-49b7-a535-aec9a26472b3">
+          <input type="text" name="name" placeholder="what's your name?" class="contact-inputs" required>
+          <input type="email" name="email" placeholder="what's your email?" class="contact-inputs" required>
+          <!--<input type="checkbox" name="botcheck" class="hidden" style="display: none;">-->
+          <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+          <textarea name="message" placeholder="what's on your mind?" class="contact-inputs" required></textarea>
+          <button type="submit">submit! → <img src=""></button>
+        </form>
+
   </body>
+
+      
